@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="task" method="upgrade">
+    <name>plg_task_bw_articlehousekeeping</name>
+    <author>Barclay.Works</author>
+    <creationDate>December 2024</creationDate>
+    <copyright>(C) 2024 Barclay.Works</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <version>1.0.0</version>
+    <description>PLG_TASK_BW_ARTICLEHOUSEKEEPING_XML_DESCRIPTION</description>
+
+    <namespace path="src">Bw\Plugin\Task\ArticleHousekeeping</namespace>
+
+    <files>
+        <folder plugin="bw_articlehousekeeping">services</folder>
+        <folder>src</folder>
+        <folder>forms</folder>
+    </files>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/plg_task_bw_articlehousekeeping.ini</language>
+        <language tag="en-GB">language/en-GB/plg_task_bw_articlehousekeeping.sys.ini</language>
+    </languages>
+
+    <updateservers>
+        <server type="extension" name="BW Article Housekeeping Updates">
+            https://www.barclay.works/updates/plugins/updates.xml
+        </server>
+    </updateservers>
+</extension>
